@@ -1,8 +1,9 @@
-import otraEscena from "./src/scenes/otraEscena.js";
+import menu from "./src/scenes/menu.js";
+import Nivel from "./src/scenes/game.js";
 
 var config = {
-	width: 920,
-	height: 360,
+	width: 420,
+	height: 420,
 	type: Phaser.AUTO,
 	backgroundcolor: "#ffffff",
 	parent: "container",
@@ -13,7 +14,7 @@ var config = {
 			debug: true,
 		},
 	},
-	scene: [otraEscena],
+	scene: [menu, Nivel],
 };
 
 const game = new Phaser.Game(config);
