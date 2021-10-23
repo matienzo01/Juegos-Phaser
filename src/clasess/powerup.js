@@ -1,0 +1,22 @@
+export default class Powerup extends Phaser.Physics.Arcade.Group {
+	constructor(physicsWorld, scene) {
+		super(physicsWorld, scene);
+	}
+
+	newItem() {
+		this.create(
+			Phaser.Math.Between(0, this.scene.scale.width),
+			20,
+			"powerup"
+		)
+			.setActive(true)
+			.setVisible(true)
+			.setGravity(400)
+			.setCollideWorldBounds(true)
+			.setDepth(2)
+			.setCircle(25)
+			.setBounce(1, 1)
+			.setVelocityX(Phaser.Math.Between(0, 1) ? 100 : -100);
+		this.hitsToKill = 4;
+	}
+}

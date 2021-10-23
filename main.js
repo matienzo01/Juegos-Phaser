@@ -1,4 +1,4 @@
-import otraEscena from "./scenes/otraEscena.js";
+import otraEscena from "./src/scenes/otraEscena.js";
 
 var config = {
 	width: 920,
