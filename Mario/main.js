@@ -2,7 +2,7 @@ import menu from "./src/scenes/menu.js";
 import Nivel from "./src/scenes/game.js";
 
 var config = {
-	width: 420,
+	width: 820,
 	height: 420,
 	type: Phaser.AUTO,
 	backgroundcolor: "#ffffff",
@@ -10,7 +10,6 @@ var config = {
 	physics: {
 		default: "arcade",
 		arcade: {
-			gravity: { y: 0 },
 			debug: true,
 		},
 	},

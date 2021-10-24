@@ -1,5 +1,4 @@
 import Button from "../classes/button.js";
-import Nivel from "./game.js";
 
 export default class menu extends Phaser.Scene {
 	constructor() {
@@ -14,7 +13,13 @@ export default class menu extends Phaser.Scene {
 		});
 	}
 	create() {
-		this.boton_inicio = new Button(this, 100, 100, "botones", "Nivel");
+		this.boton_inicio = new Button(
+			this,
+			this.sys.game.canvas.width / 2,
+			100,
+			"botones",
+			"Nivel"
+		);
 		this.mouse = this.input.activePointer;
 	}
 	update() {}
